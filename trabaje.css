@@ -1,0 +1,1004 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 82px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #053B5D;
+
+    z-index: 1000;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.navbar__logo img {
+    width: 175px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+
+    gap: 30px;
+}
+
+
+/* LINKS */
+
+.navbar__link {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: opacity 0.3s ease;
+}
+
+.navbar__link:hover {
+    opacity: 0.8;
+}
+
+
+/* =========================
+   BOTÓN SOLICITA TU GRÚA
+========================= */
+
+.navbar__button {
+    width: 142px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #EB2429;
+    border-radius: 10px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition:
+        background 0.3s ease,
+        transform 0.25s ease;
+}
+
+.navbar__button:hover {
+    background: #D91E24;
+    transform: scale(1.04);
+}
+
+.navbar__hamburger {
+    display: none;
+}
+
+
+
+/* =========================
+   HERO 1 - TRABAJA CON NOSOTROS
+========================= */
+
+.trabaje-hero {
+    width: 100%;
+    min-height: 735px;
+
+    margin-top: 82px;
+    padding: 67px 40px 95px;
+
+    display: flex;
+    align-items: flex-start;
+
+    background: #FFFFFF;
+}
+
+
+/* CONTENIDO */
+
+.trabaje-hero__content {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* TÍTULO */
+
+.trabaje-hero__title {
+    margin: 0 0 34px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 120px;
+    line-height: 0.77;
+
+    color: #053B5D;
+}
+
+.trabaje-hero__line {
+    display: block;
+    white-space: nowrap;
+}
+
+.trabaje-hero__line--red {
+    color: #EB2429;
+}
+
+.trabaje-hero__title span {
+    display: block;
+}
+
+.trabaje-hero__title .trabaje-hero__blue {
+    color: #053B5D;
+}
+
+.trabaje-hero__title .trabaje-hero__red {
+    color: #EB2429;
+}
+
+/* TEXTO */
+
+.trabaje-hero__text {
+    width: 100%;
+    max-width: 490px;
+
+    margin: 0 0 36px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #053B5D;
+}
+
+.trabaje-hero__text p {
+    margin: 0;
+}
+
+
+
+
+/* BOTÓN */
+
+.trabaje-hero__button {
+    width: 261px;
+    height: 57px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EB2429;
+    border-radius: 15px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        background 0.3s ease;
+}
+
+.trabaje-hero__button:hover {
+    transform: scale(1.04);
+    background: #D91E24;
+}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    min-height: 467px;
+
+    padding: 27px 40px 42px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #A5161A;
+    color: #FFFFFF;
+}
+
+
+/* PARTE SUPERIOR */
+
+.footer__top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* INFORMACIÓN */
+
+.footer__info {
+    max-width: 560px;
+}
+
+.footer__title {
+    margin: 0 0 14px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.15;
+
+    color: #FFFFFF;
+}
+
+.footer__subtitle {
+    margin-bottom: 40px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   CONTACTO FOOTER
+========================= */
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* FILAS DE CONTACTO */
+
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* ICONOS */
+
+.footer__contact-item img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   CORREO
+========================= */
+
+.footer__email {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   TELÉFONOS
+========================= */
+
+.footer__contact-item--phones {
+    align-items: flex-start;
+}
+
+.footer__contact-item--phones div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TODOS LOS NÚMEROS */
+
+.footer__contact-item--phones a,
+.footer__contact-item--phones span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* WHATSAPP - PRIMER NÚMERO */
+
+.footer__contact-item--phones a {
+    display: inline-block;
+    width: fit-content;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* EFECTO WHATSAPP */
+
+.footer__contact-item--phones a:hover {
+    transform: scale(1.06);
+    opacity: 0.85;
+}
+
+
+
+/* UBICACIÓN */
+
+.footer__location {
+    margin-top: 48px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFEFE;
+}
+
+
+/* LOGO DERECHO */
+
+.footer__brand {
+    align-self: flex-end;
+
+    margin-top: 185px;   /* Antes: 250px */
+    margin-right: 18px;  /* Lo separa del borde derecho */
+    margin-bottom: -50px;
+}
+
+.footer__brand img {
+    width: 270px;         /* Antes: 124px */
+    height: auto;
+
+    display: block;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer__bottom {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: auto;
+    padding-bottom: -10px;
+}
+
+.footer__line {
+    width: min(1043px, 80%);
+    height: 1px;
+
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.footer__copyright {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.footer__designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.footer__designer span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer__designer img {
+    height: 26px;
+    width: auto;
+    display: block;
+}
+
+.footer__designer img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+@media (max-width: 768px) {
+
+/* =========================
+   NAVBAR MOBILE
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 89px;
+
+    padding: 0 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #053B5D;
+
+    border-radius: 0;
+    overflow: hidden;
+
+    z-index: 1000;
+
+    transition:
+        height .3s ease,
+        border-radius .3s ease;
+}
+
+
+/* NAVBAR ABIERTA */
+
+.navbar.navbar--open {
+    height: 367px;
+
+    border-radius: 0 0 15px 15px;
+}
+
+
+/* LOGO */
+
+.navbar__logo {
+    position: absolute;
+
+    left: 25px;
+    top: 44.5px;
+
+    z-index: 3;
+
+    margin: 0;
+
+    transform: translateY(-50%);
+}
+
+.navbar__logo img {
+    width: 170px;
+    height: auto;
+
+    display: block;
+
+    transform: translateX(-28px);
+}
+
+
+/* HAMBURGUESA */
+
+.navbar__hamburger {
+    position: absolute;
+
+    right: 25px;
+    top: 44.5px;
+
+    z-index: 3;
+
+    width: 17px;
+    height: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+}
+
+.navbar__hamburger span {
+    width: 17px;
+    height: 2px;
+
+    display: block;
+
+    background: #FFFFFF;
+    border-radius: 2px;
+
+    transition:
+        transform .3s ease,
+        opacity .3s ease;
+}
+
+
+/* HAMBURGUESA → X */
+
+.navbar.navbar--open .navbar__hamburger span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar.navbar--open .navbar__hamburger span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar.navbar--open .navbar__hamburger span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+
+/* MENÚ */
+
+.navbar__menu {
+    position: absolute;
+
+    top: 89px;
+    left: 0;
+
+    width: 100%;
+    height: 278px;
+
+    padding: 18px 25px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: transparent;
+
+    border: 0;
+    border-radius: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+        opacity .25s ease,
+        visibility .25s ease;
+}
+
+.navbar.navbar--open .navbar__menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+/* LINKS */
+
+.navbar__link {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar__link + .navbar__link {
+    margin-top: -10px;
+}
+
+
+/* BOTÓN SOLICITAR SERVICIO */
+
+.navbar__button {
+    width: 137px;
+    height: 30px;
+
+    margin-top: auto;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #EB2429;
+
+    border-radius: 10px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+
+
+
+/* =========================
+   HERO 1 - TRABAJA CON NOSOTROS MOBILE
+========================= */
+
+.trabaje-hero {
+    width: 100%;
+    min-height: 564px;
+
+    margin-top: 89px;
+    padding: 137px 26px 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: #FFFFFF;
+}
+
+
+/* TÍTULO */
+
+.trabaje-hero__title {
+    width: 100%;
+    max-width: 266px;
+
+    margin: 0 0 24px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: 64px;
+    line-height: 50px;
+
+    color: #053B5D;
+}
+
+.trabaje-hero__title span {
+    display: block;
+}
+
+.trabaje-hero__title .trabaje-hero__blue {
+    color: #053B5D;
+}
+
+.trabaje-hero__title .trabaje-hero__red {
+    color: #EB2429;
+}
+
+
+/* TEXTO */
+
+.trabaje-hero__text {
+    width: 100%;
+    max-width: 306px;
+
+    margin: 0 0 33px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #053B5D;
+}
+
+.trabaje-hero__text p {
+    margin: 0;
+}
+
+/* dejamos separación entre los 2 párrafos */
+.trabaje-hero__text p + p {
+    margin-top: 8px;
+}
+
+
+/* BOTÓN */
+
+.trabaje-hero__button {
+    width: 147px;
+    height: 36px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EB2429;
+
+    border-radius: 10px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+}
+
+
+
+/* =========================
+   FOOTER MOBILE
+========================= */
+
+.footer {
+    position: relative;
+
+    width: 100%;
+    min-height: 303px;
+    height: 303px;
+
+    padding: 50px 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #A5161A;
+    color: #FFFFFF;
+}
+
+
+/* PARTE SUPERIOR */
+
+.footer__top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* INFORMACIÓN */
+
+.footer__info {
+    width: auto;
+    max-width: 220px;
+}
+
+.footer__title {
+    margin: 0 0 6px;
+
+    font-size: 16px;
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.footer__subtitle {
+    margin: 0 0 13px;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* CONTACTO */
+
+.footer__contact {
+    gap: 10px;
+}
+
+.footer__contact-item {
+    gap: 9px;
+}
+
+.footer__contact-item img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/* CORREO */
+
+.footer__email {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* TELÉFONOS */
+
+.footer__contact-item--phones a,
+.footer__contact-item--phones span {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* UBICACIÓN */
+
+.footer__location {
+    margin-top: 17px;
+
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* LOGO GRÚAS PÉREZ */
+
+.footer__brand {
+    position: absolute;
+
+    right: -10px;
+    top: 128px;
+
+    margin: 0;
+}
+
+.footer__brand img {
+    width: 150px;
+    height: auto;
+
+    display: block;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer__bottom {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateX(-50%);
+}
+
+
+/* LÍNEA */
+
+.footer__line {
+    width: min(322px, 74vw);
+    height: 1px;
+
+    margin-bottom: 8px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+/* DESARROLLADO POR */
+
+.footer__designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0px;
+}
+
+.footer__designer span {
+    font-size: 8px;
+    line-height: 11px;
+}
+
+.footer__designer img {
+    height: 16px;
+    width: auto;
+}
+
+}

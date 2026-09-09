@@ -1,0 +1,1957 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 82px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #053B5D;
+
+    z-index: 1000;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar__logo img {
+    width: 175px;
+    height: auto;
+    display: block;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__link {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: opacity .3s ease;
+}
+
+.navbar__link:hover {
+    opacity: .8;
+}
+
+.navbar__button {
+    width: 142px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    background: #EB2429;
+    border-radius: 10px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition: background .3s ease;
+}
+
+.navbar__button:hover {
+    background: #d91e24;
+}
+
+.navbar__hamburger {
+    display: none;
+}
+
+
+
+/* =========================
+   HERO 1 - NOSOTROS
+========================= */
+
+.nosotros-hero {
+    width: 100%;
+    min-height: calc(100vh - 82px);
+
+    margin-top: 82px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("img/FOTO\ NOSOTROS.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* BLOQUE PRINCIPAL */
+
+
+.nosotros-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: fit-content;
+
+    transform: translateY(100px);
+}
+
+/* CONOCE A GRÚAS */
+
+.nosotros-hero__title {
+    margin: 0;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 55px;
+
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+
+/* GRÚAS EN ROJO */
+
+.nosotros-hero__title span {
+    color: #EB2429;
+}
+
+
+
+/* IMAGEN PÉREZ */
+
+.nosotros-hero__perez {
+    width: 950px;
+    max-width: 100%;
+    height: auto;
+
+    display: block;
+
+    margin-top: -170px;
+
+    transform: translateY(-120px) scale(1.45);
+    transform-origin: center top;
+}
+
+
+
+
+
+/* =========================
+   HERO 2 - NOSOTROS
+========================= */
+
+.nosotros-hero2 {
+    width: 100%;
+    min-height: 583px;
+
+    display: grid;
+    grid-template-columns: 560px minmax(0, 1fr);
+
+    background: #ECECEC;
+}
+
+
+/* COLUMNA DE TEXTO */
+
+.nosotros-hero2__content {
+    padding: 85px 29px 42px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ECECEC;
+}
+
+
+/* TÍTULO */
+
+.nosotros-hero2__title {
+    width: 100%;
+    max-width: 491px;
+
+    margin: 0 0 35px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 55px;
+
+    color: #053B5D;
+}
+
+.nosotros-hero2__title span {
+    color: #EB2429;
+}
+
+/* TEXTO */
+
+.nosotros-hero2__text {
+    width: 100%;
+    max-width: 491px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: justify;
+
+    color: #053B5D;
+}
+
+.nosotros-hero2__text p {
+    margin: 0;
+}
+
+.nosotros-hero2__text p + p {
+    margin-top: 16px;
+}
+
+
+/* IMAGEN */
+
+.nosotros-hero2__image {
+    width: 100%;
+    height: 583px;
+
+    overflow: hidden;
+}
+
+.nosotros-hero2__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+
+
+
+/* =========================
+   HERO 3 - NUESTRA VISIÓN
+========================= */
+
+.nosotros-hero3 {
+    width: 100%;
+    height: 583px;
+
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 560px;
+}
+
+
+/* =========================
+   IMAGEN
+========================= */
+
+.nosotros-hero3__image {
+    width: 100%;
+    height: 583px;
+
+    overflow: hidden;
+}
+
+.nosotros-hero3__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+    object-fit: cover;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+.nosotros-hero3__content {
+    height: 583px;
+
+    padding: 99px 40px 40px 29px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background: #053B5D;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.nosotros-hero3__title {
+    width: 100%;
+    max-width: 491px;
+
+    margin: 0 0 44px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 50px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.nosotros-hero3__title span {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #EB2429;
+}
+
+/* VISIÓN EN ROJO */
+
+.nosotros-hero3__title span {
+    color: #EB2429;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.nosotros-hero3__text {
+    width: 100%;
+    max-width: 491px;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+/* =========================
+   HERO 4 - NUESTRA MISIÓN
+========================= */
+
+.nosotros-hero4 {
+    width: 100%;
+    aspect-ratio: 1440 / 583;
+
+    display: grid;
+    grid-template-columns: 38.9% 61.1%;
+}
+
+
+/* CONTENIDO */
+
+.nosotros-hero4__content {
+    width: 100%;
+    height: 100%;
+
+    padding: 115px 29px 40px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ECECEC;
+}
+
+
+
+/* TÍTULO */
+
+.nosotros-hero4__title {
+    width: 100%;
+    max-width: 491px;
+
+    margin: 0 0 41px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 50px;
+
+    color: #053B5D;
+}
+
+.nosotros-hero4__title span {
+    display: block;
+
+    margin-top: 12px;
+
+    color: #EB2429;
+}
+
+
+/* TEXTO */
+
+.nosotros-hero4__text {
+    width: 100%;
+    max-width: 491px;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #053B5D;
+}
+
+
+/* IMAGEN */
+
+.nosotros-hero4__image {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.nosotros-hero4__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+/* =========================
+   HERO 5 - TESTIMONIOS
+========================= */
+
+.testimonials {
+    width: 100%;
+    min-height: 638px;
+
+    padding: 64px 32px 80px;
+
+    background: #FFFFFF;
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.testimonials__title {
+    margin: 0 0 64px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 92px;
+
+    text-align: center;
+
+    color: #053B5D;
+}
+
+
+/* =========================
+   SLIDER TESTIMONIOS
+========================= */
+
+.testimonials__slider {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 40px;
+}
+
+
+.testimonials__viewport {
+    width: 1072px;
+
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    padding-bottom: 10px;
+}
+
+.testimonials__track {
+    display: flex;
+    gap: 90px;
+
+    padding-bottom: 10px;
+
+    transition: transform 0.6s ease;
+}
+
+
+/* TARJETAS */
+
+.testimonial-card {
+    width: 491px;
+    height: 295px;
+
+    flex: 0 0 491px;
+
+    padding: 35px 39px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #F7F7F7;
+
+    border-radius: 20px;
+
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
+}
+
+
+/* FLECHAS */
+
+.testimonials__arrow {
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    font-family: Arial, sans-serif;
+    font-size: 52px;
+    line-height: 1;
+
+    color: #053B5D;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.testimonials__arrow:hover {
+    transform: scale(1.15);
+    opacity: 0.75;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.testimonials__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 491px);
+
+    gap: 90px;
+}
+
+
+/* CARD */
+
+.testimonial-card {
+    width: 491px;
+    height: 295px;
+
+    padding: 35px 39px 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #F7F7F7;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* =========================
+   ESTRELLAS
+========================= */
+
+.testimonial-card__stars {
+    display: flex;
+    align-items: center;
+
+    gap: 3px;
+
+    margin-bottom: 30px;
+}
+
+.testimonial-card__stars span {
+    font-family: Arial, sans-serif;
+    font-size: 34px;
+    line-height: 34px;
+
+    color: #EB2429;
+}
+
+
+/* ESTRELLA VACÍA */
+
+.testimonial-card__star--empty {
+    color: transparent !important;
+
+    -webkit-text-stroke: 1px #EB2429;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.testimonial-card__text {
+    width: 100%;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #053B5D;
+}
+
+
+/* =========================
+   AUTOR
+========================= */
+
+.testimonial-card__author {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 17px;
+}
+
+
+/* AVATAR */
+
+.testimonial-card__avatar {
+    width: 38px;
+    height: 38px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #053B5D;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* NOMBRE */
+
+.testimonial-card__name {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #053B5D;
+}
+
+
+/* =========================
+   FLECHAS
+========================= */
+
+.testimonials__arrow {
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    font-family: Arial, sans-serif;
+    font-size: 52px;
+    line-height: 1;
+
+    color: #053B5D;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+.testimonials__arrow:hover {
+    transform: scale(1.15);
+    opacity: 0.75;
+}
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    min-height: 467px;
+
+    padding: 27px 40px 42px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #A5161A;
+    color: #FFFFFF;
+}
+
+
+/* PARTE SUPERIOR */
+
+.footer__top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* INFORMACIÓN */
+
+.footer__info {
+    max-width: 560px;
+}
+
+.footer__title {
+    margin: 0 0 14px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.15;
+
+    color: #FFFFFF;
+}
+
+.footer__subtitle {
+    margin-bottom: 40px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   CONTACTO FOOTER
+========================= */
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* FILAS DE CONTACTO */
+
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* ICONOS */
+
+.footer__contact-item img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   CORREO
+========================= */
+
+.footer__email {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   TELÉFONOS
+========================= */
+
+.footer__contact-item--phones {
+    align-items: flex-start;
+}
+
+.footer__contact-item--phones div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TODOS LOS NÚMEROS */
+
+.footer__contact-item--phones a,
+.footer__contact-item--phones span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* WHATSAPP - PRIMER NÚMERO */
+
+.footer__contact-item--phones a {
+    display: inline-block;
+    width: fit-content;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* EFECTO WHATSAPP */
+
+.footer__contact-item--phones a:hover {
+    transform: scale(1.06);
+    opacity: 0.85;
+}
+
+
+
+/* UBICACIÓN */
+
+.footer__location {
+    margin-top: 48px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFEFE;
+}
+
+
+/* LOGO DERECHO */
+
+.footer__brand {
+    align-self: flex-end;
+
+    margin-top: 185px;   /* Antes: 250px */
+    margin-right: 18px;  /* Lo separa del borde derecho */
+    margin-bottom: -50px;
+}
+
+.footer__brand img {
+    width: 270px;         /* Antes: 124px */
+    height: auto;
+
+    display: block;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer__bottom {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: auto;
+    padding-bottom: -10px;
+}
+
+.footer__line {
+    width: min(1043px, 80%);
+    height: 1px;
+
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.footer__copyright {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.footer__designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.footer__designer span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer__designer img {
+    height: 26px;
+    width: auto;
+    display: block;
+}
+
+.footer__designer img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* =========================
+       NAVBAR MOBILE
+    ========================= */
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 89px;
+
+        padding: 0 25px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #053B5D;
+
+        border-radius: 0;
+        overflow: hidden;
+
+        z-index: 1000;
+
+        transition:
+            height 0.3s ease,
+            border-radius 0.3s ease;
+    }
+
+    .navbar.navbar--open {
+        height: 367px;
+        border-radius: 0 0 15px 15px;
+    }
+
+    .navbar__logo {
+        position: absolute;
+        left: 25px;
+        top: 44.5px;
+
+        z-index: 3;
+
+        margin: 0;
+
+        transform: translateY(-50%);
+    }
+
+    .navbar__logo img {
+        width: 170px;
+        height: auto;
+
+        display: block;
+
+        transform: translateX(-28px);
+    }
+
+    .navbar__hamburger {
+        position: absolute;
+        right: 25px;
+        top: 44.5px;
+
+        z-index: 3;
+
+        width: 17px;
+        height: 14px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        margin: 0;
+        padding: 0;
+
+        border: 0;
+        background: transparent;
+
+        cursor: pointer;
+
+        transform: translateY(-50%);
+    }
+
+    .navbar__hamburger span {
+        width: 17px;
+        height: 2px;
+
+        display: block;
+
+        background: #FFFFFF;
+        border-radius: 2px;
+
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+    .navbar.navbar--open
+    .navbar__hamburger span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .navbar.navbar--open
+    .navbar__hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.navbar--open
+    .navbar__hamburger span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+    .navbar__menu {
+        position: absolute;
+
+        top: 89px;
+        left: 0;
+
+        width: 100%;
+        height: 278px;
+
+        padding: 18px 25px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        background: transparent;
+
+        border: 0;
+        border-radius: 0;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+    .navbar.navbar--open .navbar__menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    .navbar__link {
+        font-family: "Instrument Sans", sans-serif;
+        font-weight: 600;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+        text-decoration: none;
+
+        white-space: nowrap;
+    }
+
+    .navbar__link + .navbar__link {
+        margin-top: -10px;
+    }
+
+    .navbar__button {
+        width: 137px;
+        height: 30px;
+
+        margin-top: auto;
+        margin-left: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        background: #EB2429;
+        border-radius: 10px;
+
+        font-family: "Instrument Sans", sans-serif;
+        font-weight: 700;
+
+        font-size: 11px;
+        line-height: 13px;
+
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+
+
+    /* =========================
+   HERO 1 NOSOTROS MOBILE
+========================= */
+
+.nosotros-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: calc(100svh - 89px);
+
+    margin-top: 89px;
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(
+            0deg,
+            #053B5D 0%,
+            rgba(150, 172, 187, 0.42) 55%,
+            rgba(255, 255, 255, 0) 100%
+        ),
+        url("img/FOTO\ NOSOTROS\ CELULAR.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.nosotros-hero__content {
+    width: 100%;
+    max-width: 380px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateY(-10px);
+}
+
+.nosotros-hero__title {
+    margin: 0;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: clamp(32px, 8.2vw, 36px);
+    line-height: 55px;
+
+    color: #FFFFFF;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.nosotros-hero__title span {
+    color: #EB2429;
+}
+
+.nosotros-hero__perez {
+    width: min(76vw, 330px);
+    max-width: none;
+    height: auto;
+
+    display: block;
+
+    margin-top: -150px;
+
+    transform: scale(2.1);
+    transform-origin: center top;
+}
+
+/* =========================
+   HERO 2 NOSOTROS MOBILE
+========================= */
+
+.nosotros-hero2 {
+    width: 100%;
+    min-height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ECECEC;
+}
+
+
+/* BLOQUE DE TEXTO */
+
+.nosotros-hero2__content {
+    width: 100%;
+
+    padding: 36px 24px 43px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ECECEC;
+}
+
+.nosotros-hero2__title {
+    width: 100%;
+    max-width: 245px;
+
+    margin: 0 0 25px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: clamp(32px, 8.2vw, 36px);
+    line-height: 30px;
+
+    color: #053B5D;
+}
+
+.nosotros-hero2__title span {
+    color: #EB2429;
+}
+
+
+/* TEXTO */
+
+.nosotros-hero2__text {
+    width: 100%;
+    max-width: none;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    text-align: justify;
+
+    color: #053B5D;
+}
+
+.nosotros-hero2__text p {
+    margin: 0;
+}
+
+.nosotros-hero2__text p + p {
+    margin-top: 8px;
+}
+
+
+/* IMAGEN */
+
+.nosotros-hero2__image {
+    width: 100%;
+    height: auto;
+
+    overflow: hidden;
+}
+
+.nosotros-hero2__image img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* =========================
+   HERO 3 - NUESTRA VISIÓN MOBILE
+========================= */
+
+.nosotros-hero3 {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #053B5D;
+}
+
+
+/* BLOQUE AZUL */
+
+.nosotros-hero3__content {
+    width: 100%;
+    height: 225px;
+
+    padding: 38px 25px 30px 41px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    background: #053B5D;
+}
+
+
+/* TÍTULO */
+
+.nosotros-hero3__title {
+    width: 100%;
+    max-width: 150px;
+
+    margin: 0 0 16px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: 36px;
+    line-height: 30px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+.nosotros-hero3__title span {
+    display: block;
+
+    margin-top: 0;
+
+    color: #EB2429;
+}
+
+
+/* TEXTO */
+
+.nosotros-hero3__text {
+    width: 100%;
+    max-width: 373px;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    text-align: right;
+
+    color: #FFFFFF;
+}
+
+
+/* IMAGEN */
+
+.nosotros-hero3__image {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 440 / 292;
+
+    overflow: hidden;
+
+    order: 2;
+}
+
+.nosotros-hero3__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+}
+
+
+/* CONTENIDO PRIMERO */
+
+.nosotros-hero3__content {
+    order: 1;
+}
+
+/* =========================
+   HERO 4 - NUESTRA MISIÓN MOBILE
+========================= */
+
+.nosotros-hero4 {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ECECEC;
+}
+
+
+/* BLOQUE DE TEXTO */
+
+.nosotros-hero4__content {
+    width: 100%;
+    height: 225px;
+
+    padding: 43px 24px 30px 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ECECEC;
+}
+
+
+/* TÍTULO */
+
+.nosotros-hero4__title {
+    width: 100%;
+    max-width: 150px;
+
+    margin: 0 0 18px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: 36px;
+    line-height: 30px;
+
+    color: #053B5D;
+}
+
+.nosotros-hero4__title span {
+    display: block;
+
+    margin-top: 0;
+
+    color: #EB2429;
+}
+
+
+/* TEXTO */
+
+.nosotros-hero4__text {
+    width: 100%;
+    max-width: 391px;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #053B5D;
+}
+
+
+/* IMAGEN */
+
+.nosotros-hero4__image {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 440 / 291;
+
+    overflow: hidden;
+}
+
+.nosotros-hero4__image img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* =========================
+   HERO 5 - TESTIMONIOS MOBILE
+========================= */
+
+.testimonials {
+    width: 100%;
+    min-height: 296px;
+
+    padding: 0 0 32px;
+
+    background: #FFFFFF;
+
+    overflow: hidden;
+}
+
+
+/* TÍTULO */
+
+.testimonials__title {
+    margin: 0 0 5px;
+    padding-top: 0;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: 36px;
+    line-height: 92px;
+
+    text-align: center;
+
+    color: #053B5D;
+}
+
+
+/* CONTENEDOR */
+
+.testimonials__slider {
+    width: 100%;
+
+    display: block;
+
+    overflow: visible;
+}
+
+
+/* OCULTAR FLECHAS EN MOBILE */
+
+.testimonials__arrow {
+    display: none;
+}
+
+
+/* VENTANA TÁCTIL */
+
+.testimonials__viewport {
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 0 8px;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 25px;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+
+    scrollbar-width: none;
+}
+
+.testimonials__viewport::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* TRACK */
+
+.testimonials__track {
+    width: max-content;
+
+    display: flex;
+    gap: 18px;
+
+    padding-right: 25px;
+
+    transform: none !important;
+    transition: none;
+}
+
+
+/* PRIMERA CARD */
+
+.testimonials__track .testimonial-card:first-child {
+    margin-left: 25px;
+}
+
+
+/* TARJETAS */
+
+.testimonial-card {
+    width: 227px;
+    height: 159px;
+
+    flex: 0 0 227px;
+
+    padding: 17px 16px 15px;
+
+    background: #F7F7F7;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+
+/* ESTRELLAS */
+
+.testimonial-card__stars {
+    display: flex;
+    align-items: center;
+
+    gap: 2px;
+
+    margin-bottom: 10px;
+}
+
+.testimonial-card__stars span {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.testimonial-card__star--empty {
+    -webkit-text-stroke: 1px #EB2429;
+}
+
+
+/* TEXTO */
+
+.testimonial-card__text {
+    width: 100%;
+
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    color: #053B5D;
+}
+
+
+/* AUTOR */
+
+.testimonial-card__author {
+    margin-top: auto;
+
+    display: flex;
+    align-items: center;
+
+    gap: 9px;
+}
+
+
+/* AVATAR */
+
+.testimonial-card__avatar {
+    width: 20px;
+    height: 20px;
+
+    flex: 0 0 20px;
+
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* NOMBRE */
+
+.testimonial-card__name {
+    font-size: 11px;
+    line-height: 13px;
+}
+
+
+/* =========================
+   FOOTER MOBILE
+========================= */
+
+.footer {
+    position: relative;
+
+    width: 100%;
+    min-height: 303px;
+    height: 303px;
+
+    padding: 50px 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #A5161A;
+    color: #FFFFFF;
+}
+
+
+/* PARTE SUPERIOR */
+
+.footer__top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* INFORMACIÓN */
+
+.footer__info {
+    width: auto;
+    max-width: 220px;
+}
+
+.footer__title {
+    margin: 0 0 6px;
+
+    font-size: 16px;
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.footer__subtitle {
+    margin: 0 0 13px;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* CONTACTO */
+
+.footer__contact {
+    gap: 10px;
+}
+
+.footer__contact-item {
+    gap: 9px;
+}
+
+
+/* ICONOS */
+
+.footer__contact-item img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/* CORREO */
+
+.footer__email {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* TELÉFONOS */
+
+.footer__contact-item--phones a,
+.footer__contact-item--phones span {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* UBICACIÓN */
+
+.footer__location {
+    margin-top: 17px;
+
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* LOGO GRÚAS PÉREZ */
+
+.footer__brand {
+    position: absolute;
+
+    right: -10px;
+    top: 128px;
+
+    margin: 0;
+}
+
+.footer__brand img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer__bottom {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateX(-50%);
+}
+
+
+/* LÍNEA */
+
+.footer__line {
+    width: min(322px, 74vw);
+    height: 1px;
+
+    margin-bottom: 8px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+/* DESARROLLADO POR */
+
+.footer__designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0px;
+}
+
+.footer__designer span {
+    font-size: 8px;
+    line-height: 11px;
+}
+
+.footer__designer img {
+    height: 16px;
+    width: auto;
+}
+
+}

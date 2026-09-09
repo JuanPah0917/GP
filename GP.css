@@ -1,0 +1,1304 @@
+/* =========================
+   RESET GENERAL
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 82px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #053B5D;
+
+    z-index: 1000;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar__logo img {
+    width: 175px;
+    height: auto;
+    display: block;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar__link {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+    white-space: nowrap;
+
+    transition: opacity .3s ease;
+}
+
+.navbar__link:hover {
+    opacity: .8;
+}
+
+.navbar__button {
+    width: 142px;
+    height: 39px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    background: #EB2429;
+    border-radius: 10px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition: background .3s ease;
+}
+
+.navbar__button:hover {
+    background: #d91e24;
+}
+
+.navbar__hamburger {
+    display: none;
+}
+
+/* =========================
+   HERO 1
+========================= */
+
+.hero1 {
+    width: 100%;
+    min-height: calc(100vh - 82px);
+
+    margin-top: 82px;
+
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+
+    background-image: url("img/FOTO\ HOME\ PAGE.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero1__content {
+    max-width: 520px;
+}
+
+.hero1__title {
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: clamp(70px, 6.67vw, 96px);
+    line-height: 0.96;
+
+    color: #FFFFFF;
+}
+
+.hero1__subtitle {
+    margin-top: 18px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 44px;
+
+    color: #FFFFFF;
+}
+
+.hero1__button {
+    margin-top: 28px;
+
+    width: 215px;
+    height: 57px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #EB2429;
+    border-radius: 15px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+
+    transition: background .3s ease;
+}
+
+.hero1__button:hover {
+    background: #d91e24;
+}
+
+
+
+/* =========================
+   HERO 2 - SERVICIOS
+========================= */
+
+.services {
+    width: 100%;
+    min-height: 844px;
+
+    padding: 55px 40px 75px;
+
+    background: #ECECEC;
+}
+
+.services__container {
+    width: 100%;
+    max-width: 1360px;
+
+    margin: 0 auto;
+}
+
+
+/* TÍTULO PRINCIPAL */
+
+.services__title {
+    margin: 0 0 55px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 92px;
+
+    text-align: center;
+
+    color: #053B5D;
+}
+
+
+/* GRID DE SERVICIOS */
+
+.services__grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    gap: 29px;
+}
+
+
+/* TARJETAS */
+
+.service-card {
+    width: 100%;
+    height: 567px;
+
+    overflow: hidden;
+
+    background: #FFFEFE;
+
+    border-radius: 20px;
+
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* IMÁGENES */
+
+.service-card__image {
+    width: 100%;
+    height: 313px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 20px 20px 0 0;
+}
+
+
+/* CONTENIDO DE LA TARJETA */
+
+.service-card__content {
+    padding: 25px 25px 20px;
+}
+
+
+/* TÍTULO TARJETA */
+
+.service-card__title {
+    margin: 0 0 4px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #003454;
+}
+
+
+/* TEXTO TARJETA */
+
+.service-card__text {
+    margin: 0;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #053B5D;
+}
+
+
+/* =========================
+   HERO 3 - CLIENTES
+========================= */
+
+.clients {
+    width: 100%;
+    height: 340px;
+
+    padding-top: 39px;
+
+    background: #FFFFFF;
+
+    overflow: hidden;
+}
+
+.clients__container {
+    width: 100%;
+}
+
+
+/* TÍTULO */
+
+.clients__title {
+    margin: 0 0 39px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 64px;
+    line-height: 92px;
+
+    text-align: center;
+
+    color: #053B5D;
+}
+
+
+/* VENTANA DEL SLIDER */
+
+.clients__slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* PISTA QUE SE MUEVE */
+
+.clients__track {
+    width: max-content;
+
+    display: flex;
+
+    animation: clients-scroll 25s linear infinite;
+}
+
+
+/* CADA GRUPO DE 7 LOGOS */
+
+.clients__group {
+    display: flex;
+    align-items: center;
+
+    gap: 80px;
+
+    padding-right: 80px;
+}
+
+
+/* LOGOS */
+
+.clients__group img {
+    width: auto;
+    height: 88px;
+
+    display: block;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+/* ANIMACIÓN */
+
+@keyframes clients-scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    width: 100%;
+    min-height: 467px;
+
+    padding: 27px 40px 42px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: #A5161A;
+    color: #FFFFFF;
+}
+
+
+/* PARTE SUPERIOR */
+
+.footer__top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* INFORMACIÓN */
+
+.footer__info {
+    max-width: 560px;
+}
+
+.footer__title {
+    margin: 0 0 14px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 1.15;
+
+    color: #FFFFFF;
+}
+
+.footer__subtitle {
+    margin-bottom: 40px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   CONTACTO FOOTER
+========================= */
+
+.footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+/* FILAS DE CONTACTO */
+
+.footer__contact-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+/* ICONOS */
+
+.footer__contact-item img {
+    width: 35px;
+    height: 35px;
+
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   CORREO
+========================= */
+
+.footer__email {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+
+/* =========================
+   TELÉFONOS
+========================= */
+
+.footer__contact-item--phones {
+    align-items: flex-start;
+}
+
+.footer__contact-item--phones div {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* TODOS LOS NÚMEROS */
+
+.footer__contact-item--phones a,
+.footer__contact-item--phones span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+/* WHATSAPP - PRIMER NÚMERO */
+
+.footer__contact-item--phones a {
+    display: inline-block;
+    width: fit-content;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+/* EFECTO WHATSAPP */
+
+.footer__contact-item--phones a:hover {
+    transform: scale(1.06);
+    opacity: 0.85;
+}
+
+
+
+/* UBICACIÓN */
+
+.footer__location {
+    margin-top: 48px;
+
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #FFFEFE;
+}
+
+
+/* LOGO DERECHO */
+
+.footer__brand {
+    align-self: flex-end;
+
+    margin-top: 185px;   /* Antes: 250px */
+    margin-right: 18px;  /* Lo separa del borde derecho */
+    margin-bottom: -50px;
+}
+
+.footer__brand img {
+    width: 270px;         /* Antes: 124px */
+    height: auto;
+
+    display: block;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer__bottom {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: auto;
+    padding-bottom: -10px;
+}
+
+.footer__line {
+    width: min(1043px, 80%);
+    height: 1px;
+
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.footer__copyright {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: #FFFFFF;
+}
+
+.footer__designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.footer__designer span {
+    font-family: "Instrument Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+}
+
+.footer__designer img {
+    height: 26px;
+    width: auto;
+    display: block;
+}
+
+.footer__designer img:hover {
+    transform: scale(1.05);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+
+    /* =========================
+       NAVBAR MOBILE
+    ========================= */
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 89px;
+
+        padding: 0 25px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        background: #053B5D;
+
+        border-radius: 0;
+        overflow: hidden;
+
+        z-index: 1000;
+
+        transition:
+            height 0.3s ease,
+            border-radius 0.3s ease;
+    }
+
+
+    /* NAVBAR ABIERTA */
+
+    .navbar.navbar--open {
+        height: 367px;
+        border-radius: 0 0 15px 15px;
+    }
+
+
+    /* LOGO */
+
+ .navbar__logo {
+    position: absolute;
+    left: 25px;
+    top: 44.5px;
+
+    z-index: 3;
+
+    margin: 0;
+
+    transform: translateY(-50%);
+}
+
+.navbar__logo img {
+    width: 170px;
+    height: auto;
+
+    display: block;
+
+    transform: translateX(-28px);
+}
+
+
+    /* HAMBURGER */
+
+    .navbar__hamburger {
+    position: absolute;
+    right: 25px;
+    top: 44.5px;
+
+    z-index: 3;
+
+    width: 17px;
+    height: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+    background: transparent;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+}
+
+    .navbar__hamburger span {
+        width: 17px;
+        height: 2px;
+
+        display: block;
+
+        background: #FFFFFF;
+        border-radius: 2px;
+
+        transition:
+            transform 0.3s ease,
+            opacity 0.3s ease;
+    }
+
+
+    /* HAMBURGER → X */
+
+    .navbar.navbar--open
+    .navbar__hamburger span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+
+    .navbar.navbar--open
+    .navbar__hamburger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.navbar--open
+    .navbar__hamburger span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+
+
+    /* =========================
+       MENÚ DESPLEGABLE
+    ========================= */
+
+    .navbar__menu {
+        position: absolute;
+
+        top: 89px;
+        left: 0;
+
+        width: 100%;
+        height: 278px;
+
+        padding: 18px 25px 40px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        background: transparent;
+
+        border: 0;
+        border-radius: 0;
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            opacity 0.25s ease,
+            visibility 0.25s ease;
+    }
+
+
+    /* MENÚ ABIERTO */
+
+    .navbar.navbar--open .navbar__menu {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+
+    /* LINKS */
+
+    .navbar__link {
+        font-family: "Instrument Sans", sans-serif;
+        font-weight: 600;
+
+        font-size: 14px;
+        line-height: 20px;
+
+        color: #FFFFFF;
+        text-decoration: none;
+
+        white-space: nowrap;
+    }
+
+    .navbar__link + .navbar__link {
+        margin-top: -10px;
+    }
+
+
+    /* BOTÓN WHATSAPP */
+
+    .navbar__button {
+        width: 137px;
+        height: 30px;
+
+        margin-top: auto;
+        margin-left: auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        flex-shrink: 0;
+
+        background: #EB2429;
+        border-radius: 10px;
+
+        font-family: "Instrument Sans", sans-serif;
+        font-weight: 700;
+
+        font-size: 11px;
+        line-height: 13px;
+
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+
+
+    /* =========================
+       HERO 1 MOBILE
+    ========================= */
+
+    .hero1 {
+        position: relative;
+
+        width: 100%;
+        min-height: calc(100svh - 89px);
+
+        margin-top: 89px;
+        padding: 0 23px 32px;
+
+        display: flex;
+        align-items: flex-end;
+
+        background-image:
+            linear-gradient(
+                0deg,
+                #053B5D 0%,
+                rgba(150, 172, 187, 0.42) 55%,
+                rgba(255, 255, 255, 0) 100%
+            ),
+            url("img/FOTO\ HOME\ PAGE\ CELULAR.png");
+
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .hero1__content {
+        width: 100%;
+        max-width: 390px;
+    }
+
+    .hero1__title {
+        margin: 0;
+
+        font-size: clamp(52px, 14.55vw, 64px);
+        line-height: 0.94;
+    }
+
+    .hero1__subtitle {
+        margin-top: 12px;
+
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .hero1__button {
+        width: 162px;
+        height: 37px;
+
+        margin-top: 22px;
+
+        border-radius: 15px;
+
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+
+
+
+
+    /* =========================
+       HERO 2 - SERVICIOS MOBILE
+    ========================= */
+
+ .services {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+
+    padding: 28px 0;
+
+    background: #ECECEC;
+    overflow: hidden;
+}
+
+    .services__container {
+        width: 100%;
+        max-width: none;
+    }
+
+   .services__title {
+    margin: 0 0 24px;
+    padding: 0 20px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: clamp(24px, 6vw, 30px);
+    line-height: 1;
+
+    text-align: center;
+    white-space: nowrap;
+
+    color: #053B5D;
+}
+
+
+    /* CONTENEDOR DEL SLIDER */
+
+.services__slider {
+    width: 100%;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding: 0 0 8px;
+
+    scroll-snap-type: x mandatory;
+    scroll-padding-left: 35px;
+    scroll-behavior: smooth;
+
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+}
+
+.services__slider::-webkit-scrollbar {
+    display: none;
+}
+
+
+    /* PISTA DE TARJETAS */
+
+.services__grid {
+    width: max-content;
+
+    display: flex;
+    gap: 17px;
+
+    padding-right: 35px;
+}
+
+.services__grid .service-card:first-child {
+    margin-left: 35px;
+}
+
+    /* TARJETAS */
+
+    .service-card {
+        width: 262px;
+        height: 341px;
+
+        flex: 0 0 262px;
+
+        border-radius: 20px;
+
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+    }
+
+
+    /* IMAGEN */
+
+    .service-card__image {
+        width: 100%;
+        height: 188px;
+
+        border-radius: 20px 20px 0 0;
+
+        object-fit: cover;
+    }
+
+
+    /* CONTENIDO */
+
+    .service-card__content {
+        padding: 15px 15px 18px;
+    }
+
+    .service-card__title {
+        margin: 0 0 3px;
+
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .service-card__text {
+        width: 100%;
+
+        margin: 0;
+
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+
+
+
+/* =========================
+   HERO 3 - CLIENTES MOBILE
+========================= */
+
+.clients {
+    width: 100%;
+    height: 164px;
+
+    padding-top: 40px;
+
+    background: #FFFFFF;
+    overflow: hidden;
+}
+
+.clients__title {
+    margin: 0 0 26px;
+
+    font-family: "Barlow", sans-serif;
+    font-style: italic;
+    font-weight: 800;
+
+    font-size: 28px;
+    line-height: 1;
+
+    text-align: center;
+
+    color: #053B5D;
+}
+
+.clients__slider {
+    width: 100%;
+    overflow: hidden;
+}
+
+.clients__track {
+    width: max-content;
+    display: flex;
+
+    animation: clients-scroll 22s linear infinite;
+}
+
+.clients__group {
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
+
+    padding-right: 34px;
+}
+
+.clients__group img {
+    width: auto;
+    height: 38px;
+
+    display: block;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+
+
+/* =========================
+   FOOTER MOBILE
+========================= */
+
+.footer {
+    position: relative;
+
+    width: 100%;
+    min-height: 303px;
+    height: 303px;
+
+    padding: 50px 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #A5161A;
+    color: #FFFFFF;
+}
+
+/* PARTE SUPERIOR */
+
+.footer__top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+/* INFORMACIÓN */
+
+.footer__info {
+    width: auto;
+    max-width: 220px;
+}
+
+.footer__title {
+    margin: 0 0 6px;
+
+    font-size: 16px;
+    line-height: 1;
+
+    white-space: nowrap;
+}
+
+.footer__subtitle {
+    margin: 0 0 13px;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    white-space: nowrap;
+}
+
+
+/* CONTACTO */
+
+.footer__contact {
+    gap: 10px;
+}
+
+.footer__contact-item {
+    gap: 9px;
+}
+
+
+/* ICONOS */
+
+.footer__contact-item img {
+    width: 12px;
+    height: 12px;
+}
+
+
+/* CORREO */
+
+.footer__email {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* TELÉFONOS */
+
+.footer__contact-item--phones a,
+.footer__contact-item--phones span {
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* UBICACIÓN */
+
+.footer__location {
+    margin-top: 17px;
+
+    font-size: 10px;
+    line-height: 12px;
+}
+
+
+/* LOGO GRÚAS PÉREZ */
+
+.footer__brand {
+    position: absolute;
+
+    right: -10px;
+    top: 128px;
+
+    margin: 0;
+}
+
+.footer__brand img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+
+/* PARTE INFERIOR */
+
+.footer__bottom {
+    position: absolute;
+
+    left: 50%;
+    bottom: 25px;
+
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transform: translateX(-50%);
+}
+
+
+/* LÍNEA */
+
+.footer__line {
+    width: min(322px, 74vw);
+    height: 1px;
+
+    margin-bottom: 8px;
+
+    background: rgba(255, 255, 255, 0.7);
+}
+
+
+/* DESARROLLADO POR */
+
+.footer__designer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0px;
+}
+
+.footer__designer span {
+    font-size: 8px;
+    line-height: 11px;
+}
+
+.footer__designer img {
+    height: 16px;
+    width: auto;
+}
+
+
+}
